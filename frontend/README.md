@@ -13,6 +13,20 @@ InterviewAce AI is an AI-powered interview preparation platform that helps candi
 * Improvement recommendations
 * Downloadable PDF report
 
+## Screenshots
+
+### Home Page
+
+![Home](screenshots/home.png)
+
+### AI Analysis
+
+![Analysis](screenshots/analysis.png)
+
+### PDF Report
+
+![Report](screenshots/report.png)
+
 ## Tech Stack
 
 Frontend:
