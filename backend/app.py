@@ -18,6 +18,9 @@ genai.configure(api_key=API_KEY)
 
 model = genai.GenerativeModel("gemini-2.5-flash")
 
+@app.route("/")
+def home():
+    return "InterviewAce AI Backend is running successfully!"
 
 @app.route("/analyze", methods=["POST"])
 def analyze():
