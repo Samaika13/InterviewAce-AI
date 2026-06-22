@@ -65,10 +65,12 @@ npm run dev
 
 ## Architecture
 
+```text
 Frontend (React)
-        ↓
+      ↓
 Flask API
-        ↓
+      ↓
 Google Gemini API
-        ↓
+      ↓
 Resume Analysis Results
+```
