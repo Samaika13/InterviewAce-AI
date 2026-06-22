@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./App.css";
 
 function App() {
   const [resume, setResume] = useState("");
@@ -9,7 +10,7 @@ function App() {
   const handleAnalyze = async () => {
     console.log("Button clicked");
 
-    setResult("Analyzing candidate...");
+    setResult("⏳ Analyzing candidate...");
 
     const formData = new FormData();
 
@@ -36,7 +37,7 @@ function App() {
   };
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div className="container">
       <h1>InterviewAce AI</h1>
 
       <h2>Resume</h2>
@@ -46,6 +47,10 @@ function App() {
         accept=".pdf"
         onChange={(e) => setResumeFile(e.target.files[0])}
       />
+
+      {resumeFile && (
+        <p>📄 {resumeFile.name}</p>
+      )}
 
       <br />
       <br />
@@ -78,9 +83,15 @@ function App() {
       <br />
       <br />
 
-      <h2>Results</h2>
+      {result && (
+        <>
+          <h2>Results</h2>
 
-      <pre>{result}</pre>
+          <div className="results">
+            <pre>{result}</pre>
+          </div>
+        </>
+      )}
     </div>
   );
 }
