@@ -1,16 +1,62 @@
-# React + Vite
+# InterviewAce AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+InterviewAce AI is an AI-powered interview preparation platform that helps candidates evaluate how well their resume matches a job description.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Upload resume PDF
+* Paste job description
+* AI-powered resume analysis
+* Match score calculation
+* Missing skill detection
+* Interview question generation
+* Improvement recommendations
+* Downloadable PDF report
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Frontend:
 
-## Expanding the ESLint configuration
+* React
+* JavaScript
+* CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Backend:
+
+* Flask
+* Python
+
+AI:
+
+* Google Gemini AI
+
+Libraries:
+
+* PyPDF
+* jsPDF
+
+## How It Works
+
+1. Upload a resume PDF.
+2. Paste a job description.
+3. Gemini AI analyzes the candidate profile.
+4. The application generates:
+
+   * Match score
+   * Resume strengths
+   * Missing skills
+   * Interview questions
+   * Improvement suggestions
+5. Export results as a PDF report.
+
+## Future Enhancements
+
+* ATS scoring
+* Resume optimization suggestions
+* Mock interview simulator
+* Multiple resume comparison
+
+## Author
+
+Samaika Kanwar
+Hackathon Project 2026

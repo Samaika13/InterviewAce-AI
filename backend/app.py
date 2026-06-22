@@ -47,13 +47,15 @@ def analyze():
 
     Analyze the candidate resume against the job description.
 
-    Return:
+    Return concise results.
 
-    1. Resume Strengths
-    2. Missing Skills
+    1. Top 5 Resume Strengths
+    2. Top 5 Missing Skills
     3. Match Score out of 100
-    4. Top 10 Interview Questions
-    5. Improvement Suggestions
+    4. Top 5 Interview Questions
+    5. Top 3 Improvement Suggestions
+
+    Keep the response under 500 words.
 
     Resume:
     {resume}
