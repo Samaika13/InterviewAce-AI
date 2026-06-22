@@ -44,7 +44,7 @@ function App() {
     setSkills(foundSkills);
 
     const response = await fetch(
-      "http://127.0.0.1:5000/analyze",
+      "https://interviewace-ai-n056.onrender.com",
       {
         method: "POST",
         body: formData,
