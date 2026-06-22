@@ -13,7 +13,7 @@ AI-powered interview preparation platform that analyzes a candidate's resume aga
 
 Backend deployed on Render:
 
-https://interviewace-ai-n056.onrender.com
+[Live Backend](https://interviewace-ai-n056.onrender.com)
 
 ## Features
 
@@ -53,3 +53,20 @@ Backend:
 cd backend
 pip install -r requirements.txt
 python app.py
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+
+## Architecture
+
+Frontend (React)
+        ↓
+Flask API
+        ↓
+Google Gemini API
+        ↓
+Resume Analysis Results
