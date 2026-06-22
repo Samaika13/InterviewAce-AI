@@ -1,76 +1,55 @@
 # InterviewAce AI
 
-InterviewAce AI is an AI-powered interview preparation platform that helps candidates evaluate how well their resume matches a job description.
+AI-powered interview preparation platform that analyzes a candidate's resume against a job description and generates:
+
+- Resume match score
+- Strengths analysis
+- Missing skills detection
+- Interview questions
+- Improvement suggestions
+- Downloadable PDF report
+
+## Live Backend
+
+Backend deployed on Render:
+
+https://interviewace-ai-n056.onrender.com
 
 ## Features
 
-* Upload resume PDF
-* Paste job description
-* AI-powered resume analysis
-* Match score calculation
-* Missing skill detection
-* Interview question generation
-* Improvement recommendations
-* Downloadable PDF report
-
-## Screenshots
-
-### Home Page
-
-![Home](screenshots/home.png)
-
-### AI Analysis
-
-![Analysis](screenshots/analysis.png)
-
-### PDF Report
-
-![Report](screenshots/report.png)
+- Upload resume PDF
+- Paste job description
+- AI-powered resume analysis
+- Match score calculation
+- Skill badge detection
+- Interview question generation
+- PDF report export
 
 ## Tech Stack
 
 Frontend:
-
-* React
-* JavaScript
-* CSS
+- React
+- Vite
+- JavaScript
 
 Backend:
+- Flask
+- Google Gemini API
+- PyPDF
 
-* Flask
-* Python
+## Screenshots
 
-AI:
+### Home Screen
+![Home](screenshots/home.png)
 
-* Google Gemini AI
+### Analysis Results
+![Results](screenshots/analysis.png)
 
-Libraries:
+## Run Locally
 
-* PyPDF
-* jsPDF
+### Backend
 
-## How It Works
-
-1. Upload a resume PDF.
-2. Paste a job description.
-3. Gemini AI analyzes the candidate profile.
-4. The application generates:
-
-   * Match score
-   * Resume strengths
-   * Missing skills
-   * Interview questions
-   * Improvement suggestions
-5. Export results as a PDF report.
-
-## Future Enhancements
-
-* ATS scoring
-* Resume optimization suggestions
-* Mock interview simulator
-* Multiple resume comparison
-
-## Author
-
-Samaika Kanwar
-Hackathon Project 2026
+```bash
+cd backend
+pip install -r requirements.txt
+python app.py
